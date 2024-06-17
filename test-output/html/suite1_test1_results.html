@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Login Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Login Test</h1>
+<p>
+  Test duration: 234.312s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.DesktopsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyProductAddedToShoppingCartSuccessFully
+      </td>
+  <td class="duration">
+    63.831s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"iPhone", "2", "Success: You have added iPhone to your shopping cart!", "iPhone", "Product 1 1", "150.92"</span><br />
+    
+            <div class="testOutput">
+                        Mouse Hover On Desktop[[ChromeDriver: chrome on windows (052a75d69394235d2d5959ba6eea7f4f)] -&gt; link text: Desktops]<br />
+                                click On Show All Desktop[[ChromeDriver: chrome on windows (052a75d69394235d2d5959ba6eea7f4f)] -&gt; link text: Show AllDesktops]<br />
+                                Sort Name (A - Z) By Position NameAtoZ[[ChromeDriver: chrome on windows (052a75d69394235d2d5959ba6eea7f4f)] -&gt; xpath: //select[@id=&apos;input-sort&apos;]]<br />
+                                Click on iPhone<br />
+                                Clear the text on [[ChromeDriver: chrome on windows (052a75d69394235d2d5959ba6eea7f4f)] -&gt; xpath: //input[@id=&apos;input-quantity&apos;]]<br />
+                                Click On Add To Cart[[ChromeDriver: chrome on windows (052a75d69394235d2d5959ba6eea7f4f)] -&gt; xpath: //button[@id=&apos;button-cart&apos;]]<br />
+                                Get Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;alert alert-success alert-dismissible&apos;]&apos;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=125.0.6422.142)<br/>
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception<br/>
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;<br/>
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [052a75d69394235d2d5959ba6eea7f4f, findElement {value=//div[@class=&apos;alert alert-success alert-dismissible&apos;], using=xpath}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\visha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64340}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64340/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 052a75d69394235d2d5959ba6eea7f4f</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br />
+              jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)<br />
+              com.tutorialsninja.demo.utility.Utility.getTextFromElement(Utility.java:64)<br />
+              com.tutorialsninja.demo.pages.DesktopsPage.getSuccessAlertMsg(DesktopsPage.java:308)<br />
+              com.tutorialsninja.demo.testsuite.DesktopsTest.verifyProductAddedToShoppingCartSuccessFully(DesktopsTest.java:75)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:739)<br />
+              org.testng.TestRunner.run(TestRunner.java:614)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:421)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1112)<br />
+              org.testng.TestNG.run(TestNG.java:1079)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.DesktopsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyProductAddedToShoppingCartSuccessFully
+      </td>
+  <td class="duration">
+    6.726s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Palm Treo Pro", "3", "Success: You have added Palm Treo Pro to your shopping cart!", "Palm Treo Pro", "Product 2", "1242.11"</span><br />
+    
+            <div class="testOutput">
+                        Mouse Hover On Desktop[[ChromeDriver: chrome on windows (81b07d476b07bb06623dfed41ba37ad9)] -&gt; link text: Desktops]<br />
+                                click On Show All Desktop[[ChromeDriver: chrome on windows (81b07d476b07bb06623dfed41ba37ad9)] -&gt; link text: Show AllDesktops]<br />
+                                Sort Name (A - Z) By Position NameAtoZ[[ChromeDriver: chrome on windows (81b07d476b07bb06623dfed41ba37ad9)] -&gt; xpath: //select[@id=&apos;input-sort&apos;]]<br />
+                                Click on Palm Treo Pro<br />
+                                Clear the text on [[ChromeDriver: chrome on windows (81b07d476b07bb06623dfed41ba37ad9)] -&gt; xpath: //input[@id=&apos;input-quantity&apos;]]<br />
+                                Click On Add To Cart[[ChromeDriver: chrome on windows (81b07d476b07bb06623dfed41ba37ad9)] -&gt; xpath: //button[@id=&apos;button-cart&apos;]]<br />
+                                Get [[ChromeDriver: chrome on windows (81b07d476b07bb06623dfed41ba37ad9)] -&gt; xpath: //div[@class=&apos;alert alert-success alert-dismissible&apos;]]<br />
+                                clickOnShoppingCart[[ChromeDriver: chrome on windows (81b07d476b07bb06623dfed41ba37ad9)] -&gt; xpath: //span[contains(text(),&apos;Shopping Cart&apos;)]]<br />
+                                Get [[ChromeDriver: chrome on windows (81b07d476b07bb06623dfed41ba37ad9)] -&gt; xpath: //h4/a]<br />
+                                Get Model name[[ChromeDriver: chrome on windows (81b07d476b07bb06623dfed41ba37ad9)] -&gt; xpath: //div[@class = &apos;table-responsive&apos;]/table/tbody/tr/td[3]]<br />
+                                Get total[[ChromeDriver: chrome on windows (81b07d476b07bb06623dfed41ba37ad9)] -&gt; xpath: //div[@class = &apos;table-responsive&apos;]/table/tbody/tr/td[6]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyProductAddedToShoppingCartSuccessFully
+      </td>
+  <td class="duration">
+    6.718s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"HTC Touch HD", "1", "Success: You have added HTC Touch HD to your shopping cart!", "HTC Touch HD", "Product 1", "74.73"</span><br />
+    
+            <div class="testOutput">
+                        Mouse Hover On Desktop[[ChromeDriver: chrome on windows (c6847b5f905d2a10a939595a36445c42)] -&gt; link text: Desktops]<br />
+                                click On Show All Desktop[[ChromeDriver: chrome on windows (c6847b5f905d2a10a939595a36445c42)] -&gt; link text: Show AllDesktops]<br />
+                                Sort Name (A - Z) By Position NameAtoZ[[ChromeDriver: chrome on windows (c6847b5f905d2a10a939595a36445c42)] -&gt; xpath: //select[@id=&apos;input-sort&apos;]]<br />
+                                Click on HTC Touch HD<br />
+                                Clear the text on [[ChromeDriver: chrome on windows (c6847b5f905d2a10a939595a36445c42)] -&gt; xpath: //input[@id=&apos;input-quantity&apos;]]<br />
+                                Click On Add To Cart[[ChromeDriver: chrome on windows (c6847b5f905d2a10a939595a36445c42)] -&gt; xpath: //button[@id=&apos;button-cart&apos;]]<br />
+                                Get [[ChromeDriver: chrome on windows (c6847b5f905d2a10a939595a36445c42)] -&gt; xpath: //div[@class=&apos;alert alert-success alert-dismissible&apos;]]<br />
+                                clickOnShoppingCart[[ChromeDriver: chrome on windows (c6847b5f905d2a10a939595a36445c42)] -&gt; xpath: //span[contains(text(),&apos;Shopping Cart&apos;)]]<br />
+                                Get [[ChromeDriver: chrome on windows (c6847b5f905d2a10a939595a36445c42)] -&gt; xpath: //h4/a]<br />
+                                Get Model name[[ChromeDriver: chrome on windows (c6847b5f905d2a10a939595a36445c42)] -&gt; xpath: //div[@class = &apos;table-responsive&apos;]/table/tbody/tr/td[3]]<br />
+                                Get total[[ChromeDriver: chrome on windows (c6847b5f905d2a10a939595a36445c42)] -&gt; xpath: //div[@class = &apos;table-responsive&apos;]/table/tbody/tr/td[6]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyProductsPriceDisplayHighToLowSuccessfully
+      </td>
+  <td class="duration">
+    2.892s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Mouse Hover On Desktop[[ChromeDriver: chrome on windows (1012215e99c28cb43c095b174fe27851)] -&gt; link text: Desktops]<br />
+                                click On Show All Desktop[[ChromeDriver: chrome on windows (1012215e99c28cb43c095b174fe27851)] -&gt; link text: Show AllDesktops]<br />
+                                Sort Name (Z - A) By Position NameZtoA[[ChromeDriver: chrome on windows (1012215e99c28cb43c095b174fe27851)] -&gt; xpath: //select[@id=&apos;input-sort&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyProductsPriceDisplayHighToLowSuccessfully
+      </td>
+  <td class="duration">
+    2.735s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        MouseHover On LaptopsAndDesktopTab[[ChromeDriver: chrome on windows (b3f4431d7e7818ab48ed87423e82b21b)] -&gt; link text: Laptops &amp; Notebooks]<br />
+                                clickOnShowAllLaptopsAndNotebooks[[ChromeDriver: chrome on windows (b3f4431d7e7818ab48ed87423e82b21b)] -&gt; xpath: //a[contains(text(),&apos;Show AllLaptops &amp; Notebooks&apos;)]]<br />
+                                Sort By PriceHighToLow[[ChromeDriver: chrome on windows (b3f4431d7e7818ab48ed87423e82b21b)] -&gt; xpath: //select[@id=&apos;input-sort&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatUserPlaceOrderSuccessfully
+      </td>
+  <td class="duration">
+    15.971s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        MouseHover On LaptopsAndDesktopTab[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; link text: Laptops &amp; Notebooks]<br />
+                                clickOnShowAllLaptopsAndNotebooks[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //a[contains(text(),&apos;Show AllLaptops &amp; Notebooks&apos;)]]<br />
+                                Sort By PriceHighToLow[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //select[@id=&apos;input-sort&apos;]]<br />
+                                Click On MacBookTab[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; link text: Sony VAIO]<br />
+                                Click On AddToCartButton[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //button[@id=&apos;button-cart&apos;]]<br />
+                                Get SuccessText From Link[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //div[@class=&apos;alert alert-success alert-dismissible&apos;]]<br />
+                                Click On ShoppingCart[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //span[contains(text(),&apos;Shopping Cart&apos;)]]<br />
+                                get ShoppingCart Message[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //a[contains(text(),&apos;Shopping Cart&apos;)]]<br />
+                                Get VerifyProduct Macbook[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; link text: Sony VAIO]<br />
+                                Click On UpdateCart[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //button[contains(@data-original-title, &apos;Update&apos;)]]<br />
+                                getSuccessModifiedCartMessage[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //div[@id=&apos;checkout-cart&apos;]/div[1]]<br />
+                                Get VerifyTotal[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //tbody/tr[1]/td[6]]<br />
+                                Click On CheckoutButton[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //a[contains(text(),&apos;Checkout&apos;)]]<br />
+                                Get Checkout Text[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //h1[contains(text(),&apos;Checkout&apos;)]]<br />
+                                Get NewCustomer Text[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //div[@class=&apos;col-sm-6&apos;]//h2]<br />
+                                Click On GuestCheckoutRadioButton[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //input[@name=&apos;account&apos; and @value=&apos;guest&apos;]]<br />
+                                Click On ContinueTab[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //input[@id=&apos;button-account&apos;]]<br />
+                                Enter Name Rudra in firstname field[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; name: firstname]<br />
+                                Enter LastName Patel in lastname field [[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; name: lastname]<br />
+                                Enter Email&nbsp; prime123mcb@gmail.com to email field[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; id: input-payment-email]<br />
+                                Enter Telephone 1234567890 in telephone field 1234567890<br />
+                                enter Address[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; name: address_1]<br />
+                                Enter City [[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; name: city]<br />
+                                Enter Postcode[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; name: postcode]<br />
+                                enter Country[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; id: input-payment-country]<br />
+                                enter Zone[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //select[@id=&apos;input-payment-zone&apos;]]<br />
+                                clickOnContinueButton[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //input[@id=&apos;button-guest&apos;]]<br />
+                                enterTextToTextArea[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //textarea[@name=&apos;comment&apos;]]<br />
+                                click on continue[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //input[@id=&apos;button-shipping-method&apos;]]<br />
+                                clickOnTermsAndConditionsCheckbox[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //body/div[@id=&apos;checkout-checkout&apos;]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/div[2]/div[1]/input[1]]<br />
+                                clickOnFinalContinueButton[[ChromeDriver: chrome on windows (44f7a24958fcf72e4ee3f7364b2109b3)] -&gt; xpath: //input[@id=&apos;button-payment-method&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.MyAccountsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyThatUserRegisterAccountSuccessfully
+      </td>
+  <td class="duration">
+    25.117s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        click On MyAccount Link [[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; xpath: //span[contains(text(),&apos;My Account&apos;)]]<br />
+                                Enter First Name Rudra in field[[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; id: input-firstname]<br />
+                                Enter last Name Patel in field[[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; id: input-lastname]<br />
+                                Enter rudra0or@gmail.com EmailId[[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; id: input-email]<br />
+                                Enter 1234567890Phone Number[[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; id: input-telephone]<br />
+                                Enter Password rudra123 in password field[[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; id: input-password]<br />
+                                enter ConfirmPassword [[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; id: input-confirm]<br />
+                                clickSubscribeOnYesRadioButton [[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; xpath: //input[@name=&apos;newsletter&apos;]]<br />
+                                clickOnPrivacyPolicyCheckBox[[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; xpath: //div[@class = &apos;buttons&apos;]//input[@name=&apos;agree&apos;]]<br />
+                                clickOnContinue1[[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; xpath: //div[@class = &apos;buttons&apos;]//input[@value=&apos;Continue&apos;]]<br />
+                                getAccountCreatedMessage[[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; xpath: //h1[contains(text(),&apos;Your Account Has Been Created!&apos;)]]<br />
+                                clickOnContinueButton2[[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; xpath: //a[contains(text(),&apos;Continue&apos;)]]<br />
+                                clickOnMyAccountTab[[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; xpath: //span[contains(text(),&apos;My Account&apos;)]]<br />
+                                getAccountLogoutMessage[[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; xpath: //h1[contains(text(),&apos;Account Logout&apos;)]]<br />
+                                click On Continue Button3[[ChromeDriver: chrome on windows (c8222df175fe6b80f8cb5f36f2a736f6)] -&gt; xpath: //a[contains(text(),&apos;Continue&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatUserShouldLoginAndLogoutSuccessfully
+      </td>
+  <td class="duration">
+    23.822s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        click On MyAccount Link [[ChromeDriver: chrome on windows (7e0384c6b7d5b18d4e5f2e0ae0c0d2ff)] -&gt; xpath: //span[contains(text(),&apos;My Account&apos;)]]<br />
+                                Enter prime123@gmail.com EmailId[[ChromeDriver: chrome on windows (7e0384c6b7d5b18d4e5f2e0ae0c0d2ff)] -&gt; id: input-email]<br />
+                                Enter Password Prime123 in password field[[ChromeDriver: chrome on windows (7e0384c6b7d5b18d4e5f2e0ae0c0d2ff)] -&gt; id: input-password]<br />
+                                clickOnLogin[[ChromeDriver: chrome on windows (7e0384c6b7d5b18d4e5f2e0ae0c0d2ff)] -&gt; xpath: //form[contains(@action,&apos;login&apos;)]//input[@type=&apos;submit&apos;]]<br />
+                                clickOnMyAccountTab[[ChromeDriver: chrome on windows (7e0384c6b7d5b18d4e5f2e0ae0c0d2ff)] -&gt; xpath: //span[contains(text(),&apos;My Account&apos;)]]<br />
+                                getAccountLogoutMessage[[ChromeDriver: chrome on windows (7e0384c6b7d5b18d4e5f2e0ae0c0d2ff)] -&gt; xpath: //h1[contains(text(),&apos;Account Logout&apos;)]]<br />
+                                click On Continue Button3[[ChromeDriver: chrome on windows (7e0384c6b7d5b18d4e5f2e0ae0c0d2ff)] -&gt; xpath: //a[contains(text(),&apos;Continue&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToLoginPageSuccessfully
+      </td>
+  <td class="duration">
+    0.595s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        click On MyAccount Link [[ChromeDriver: chrome on windows (d64f5fdbdcf130f91ebd3d7aeb800d84)] -&gt; xpath: //span[contains(text(),&apos;My Account&apos;)]]<br />
+                                getReturningCustomerMessage[[ChromeDriver: chrome on windows (d64f5fdbdcf130f91ebd3d7aeb800d84)] -&gt; xpath: //h2[contains(text(),&apos;Returning Customer&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToRegisterPageSuccessfully
+      </td>
+  <td class="duration">
+    20.868s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        click On MyAccount Link [[ChromeDriver: chrome on windows (722d37e22c89a630481187432e3977fe)] -&gt; xpath: //span[contains(text(),&apos;My Account&apos;)]]<br />
+                                getRegisterAccountMessage[[ChromeDriver: chrome on windows (722d37e22c89a630481187432e3977fe)] -&gt; xpath: //h1[contains(text(),&apos;Register Account&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.TopMenuTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToComponentsPageSuccessfully
+      </td>
+  <td class="duration">
+    0.951s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        mouseHoverToComponentsTab[[ChromeDriver: chrome on windows (d934cf3eedce245e98b314d8b4e2c9e0)] -&gt; link text: Components]<br />
+                                getComponentsText[[ChromeDriver: chrome on windows (d934cf3eedce245e98b314d8b4e2c9e0)] -&gt; xpath: //h2[contains(text(),&apos;Components&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToDesktopsPageSuccessfully
+      </td>
+  <td class="duration">
+    1.327s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                         Mousehover and Click on desktop [[ChromeDriver: chrome on windows (4ae96efd51994e3597b24e298ef9bb18)] -&gt; link text: Desktops]<br />
+                                get Text Desktop[[ChromeDriver: chrome on windows (4ae96efd51994e3597b24e298ef9bb18)] -&gt; xpath: //h2[contains(text(),&apos;Desktops&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully
+      </td>
+  <td class="duration">
+    1.019s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        mouseHoverOnLaptopsAndNotebooksTab[[ChromeDriver: chrome on windows (5a427a9d904964aa0fffe5d3b3ee86b3)] -&gt; link text: Laptops &amp; Notebooks]<br />
+                                getLaptopsAndNotebooksText[[ChromeDriver: chrome on windows (5a427a9d904964aa0fffe5d3b3ee86b3)] -&gt; css selector: body:nth-child(2) div.container:nth-child(4) div.row div.col-sm-9 &gt; h2:nth-child(1)]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
